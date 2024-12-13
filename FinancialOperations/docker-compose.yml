@@ -7,6 +7,9 @@ services:
       dockerfile: FinancialOperations.API/Dockerfile
     networks:
       - app-network
+    ports:
+      - "55025:8080" 
+      - "55028:8081"   
     depends_on:
       - elasticsearch
       - rabbitmqInstance
@@ -19,6 +22,9 @@ services:
       dockerfile: FinancialOperations.Consolidator.API/Dockerfile
     networks:
       - app-network
+    ports:
+      - "55029:8080"
+      - "55031:8081"
     depends_on:
       - elasticsearch
       - rabbitmqInstance

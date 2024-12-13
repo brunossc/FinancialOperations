@@ -1,6 +1,6 @@
 ﻿
-using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace FinancialOperations.Consolidator.API.Domain.Model
 {

@@ -37,7 +37,7 @@ namespace FinancialOperations.API.Middleware
         {
             public static bool Success => false;
             public int StatusCode { get; set; }
-            
+
             public string Message { get; set; } = string.Empty;
             public int Reason { get; set; }
 

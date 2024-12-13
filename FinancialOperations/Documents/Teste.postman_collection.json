@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "d4db89ea-9fad-452b-880d-429b615364e2",
+		"name": "Teste",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2416471"
+	},
+	"item": [
+		{
+			"name": "AddCredit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"value\": 8.5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:51813/Operations/AddCredit",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "51813",
+					"path": [
+						"Operations",
+						"AddCredit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddDebit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"value\": 8.5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:51813/Operations/AddDebit",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "51813",
+					"path": [
+						"Operations",
+						"AddDebit"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\FinancialOperations.MQ.Events\FinancialOperations.MQ.Events.csproj" />
+    <ProjectReference Include="..\FinancialOperations.MQ.Events\FinancialOperations.MQ.Events.csproj" />
     <ProjectReference Include="..\FinancialOperations.SideCar\FinancialOperations.SideCar.csproj" />
   </ItemGroup>
 

@@ -11,11 +11,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialOperations.SideCar
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{937E6826-EDCB-4CC1-8470-A87C875A88E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialOperations.Consolidator.Protos", "FinancialOperations.Consolidator.Protos\FinancialOperations.Consolidator.Protos.csproj", "{BC0D4F69-5225-46DB-A3BA-ED4DD5066D79}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{33643E71-5382-45C3-8D50-332760E7BE2C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialOperations.MQ.Events", "FinancialOperations.MQ.Events\FinancialOperations.MQ.Events.csproj", "{D3656C9C-F58F-4373-9D40-A9CEAEFEFF76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{474208C6-1E32-42C1-8DE2-58CC5103F1C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialOperations.Consolidator.API.Test", "Test\FinancialOperations.Consolidator.API.Test\FinancialOperations.Consolidator.API.Test.csproj", "{40567A42-4E0B-4CD1-990E-A41FE5066331}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialOperations.API.Test", "Test\FinancialOperations.API.Test\FinancialOperations.API.Test.csproj", "{67F073F0-3CFD-4159-A6ED-0CA2D2E1C878}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,21 +43,26 @@ Global
 		{937E6826-EDCB-4CC1-8470-A87C875A88E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{937E6826-EDCB-4CC1-8470-A87C875A88E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{937E6826-EDCB-4CC1-8470-A87C875A88E5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BC0D4F69-5225-46DB-A3BA-ED4DD5066D79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BC0D4F69-5225-46DB-A3BA-ED4DD5066D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BC0D4F69-5225-46DB-A3BA-ED4DD5066D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BC0D4F69-5225-46DB-A3BA-ED4DD5066D79}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D3656C9C-F58F-4373-9D40-A9CEAEFEFF76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D3656C9C-F58F-4373-9D40-A9CEAEFEFF76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3656C9C-F58F-4373-9D40-A9CEAEFEFF76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3656C9C-F58F-4373-9D40-A9CEAEFEFF76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40567A42-4E0B-4CD1-990E-A41FE5066331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40567A42-4E0B-4CD1-990E-A41FE5066331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40567A42-4E0B-4CD1-990E-A41FE5066331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40567A42-4E0B-4CD1-990E-A41FE5066331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67F073F0-3CFD-4159-A6ED-0CA2D2E1C878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67F073F0-3CFD-4159-A6ED-0CA2D2E1C878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67F073F0-3CFD-4159-A6ED-0CA2D2E1C878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67F073F0-3CFD-4159-A6ED-0CA2D2E1C878}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{606D2AFB-9B68-407B-B75F-A26663585552} = {33643E71-5382-45C3-8D50-332760E7BE2C}
-		{BC0D4F69-5225-46DB-A3BA-ED4DD5066D79} = {33643E71-5382-45C3-8D50-332760E7BE2C}
 		{D3656C9C-F58F-4373-9D40-A9CEAEFEFF76} = {33643E71-5382-45C3-8D50-332760E7BE2C}
+		{40567A42-4E0B-4CD1-990E-A41FE5066331} = {474208C6-1E32-42C1-8DE2-58CC5103F1C1}
+		{67F073F0-3CFD-4159-A6ED-0CA2D2E1C878} = {474208C6-1E32-42C1-8DE2-58CC5103F1C1}
 	EndGlobalSection
 EndGlobal

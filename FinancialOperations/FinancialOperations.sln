@@ -13,9 +13,9 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialOperations.Consolidator.Protos", "FinancialOperations.Consolidator.Protos\FinancialOperations.Consolidator.Protos.csproj", "{BC0D4F69-5225-46DB-A3BA-ED4DD5066D79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialOperations.MQ.Events", "..\FinancialOperations.MQ.Events\FinancialOperations.MQ.Events.csproj", "{A10A39B9-261B-4815-9C1C-6045D08144ED}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{33643E71-5382-45C3-8D50-332760E7BE2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialOperations.MQ.Events", "FinancialOperations.MQ.Events\FinancialOperations.MQ.Events.csproj", "{D3656C9C-F58F-4373-9D40-A9CEAEFEFF76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,10 +43,10 @@ Global
 		{BC0D4F69-5225-46DB-A3BA-ED4DD5066D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC0D4F69-5225-46DB-A3BA-ED4DD5066D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC0D4F69-5225-46DB-A3BA-ED4DD5066D79}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A10A39B9-261B-4815-9C1C-6045D08144ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A10A39B9-261B-4815-9C1C-6045D08144ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A10A39B9-261B-4815-9C1C-6045D08144ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A10A39B9-261B-4815-9C1C-6045D08144ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3656C9C-F58F-4373-9D40-A9CEAEFEFF76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3656C9C-F58F-4373-9D40-A9CEAEFEFF76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3656C9C-F58F-4373-9D40-A9CEAEFEFF76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3656C9C-F58F-4373-9D40-A9CEAEFEFF76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,6 +54,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{606D2AFB-9B68-407B-B75F-A26663585552} = {33643E71-5382-45C3-8D50-332760E7BE2C}
 		{BC0D4F69-5225-46DB-A3BA-ED4DD5066D79} = {33643E71-5382-45C3-8D50-332760E7BE2C}
-		{A10A39B9-261B-4815-9C1C-6045D08144ED} = {33643E71-5382-45C3-8D50-332760E7BE2C}
+		{D3656C9C-F58F-4373-9D40-A9CEAEFEFF76} = {33643E71-5382-45C3-8D50-332760E7BE2C}
 	EndGlobalSection
 EndGlobal

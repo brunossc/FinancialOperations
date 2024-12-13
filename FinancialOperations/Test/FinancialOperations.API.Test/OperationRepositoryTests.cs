@@ -21,7 +21,6 @@ namespace FinancialOperations.API.Test
         [Fact]
         public async Task AddAsync_ShouldInsertOperation()
         {
-            // Arrange
             var operation = new Operation
             {
                 Value = 100,
@@ -29,12 +28,10 @@ namespace FinancialOperations.API.Test
                 CreatedAt = DateTime.UtcNow
             };
 
-            // Act
             await _repository.AddAsync(operation);
 
             var result = await _repository.GetAsync(o => o.Value == 100 && o.IsCredit);
 
-            // Assert
             Assert.Single(result);
             Assert.Equal(100, result.First().Value);
             Assert.True(result.First().IsCredit);
@@ -43,22 +40,19 @@ namespace FinancialOperations.API.Test
         [Fact]
         public async Task GetAsync_ShouldReturnMatchingOperations()
         {
-            // Arrange
             var operations = new List<Operation>
-        {
-            new Operation { Value = 50, IsCredit = false, CreatedAt = DateTime.UtcNow },
-            new Operation { Value = 100, IsCredit = true, CreatedAt = DateTime.UtcNow }
-        };
+            {
+                new Operation { Value = 50, IsCredit = false, CreatedAt = DateTime.UtcNow },
+                new Operation { Value = 100, IsCredit = true, CreatedAt = DateTime.UtcNow }
+            };
 
             foreach (var operation in operations)
             {
                 await _repository.AddAsync(operation);
             }
 
-            // Act
             var result = await _repository.GetAsync(o => o.IsCredit);
 
-            // Assert
             Assert.Single(result);
             Assert.Equal(100, result.First().Value);
             Assert.True(result.First().IsCredit);
@@ -67,10 +61,9 @@ namespace FinancialOperations.API.Test
         [Fact]
         public async Task GetAsync_ShouldReturnEmpty_WhenNoMatchFound()
         {
-            // Act
             var result = await _repository.GetAsync(o => o.Value == 999);
 
-            // Assert
+            
             Assert.Empty(result);
         }
 

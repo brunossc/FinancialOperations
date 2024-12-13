@@ -62,10 +62,8 @@ namespace FinancialOperations.Consolidator.API.Test
 
             var request = new GetOperationQuery();
 
-            // Act
             var response = await _service.GetOperationAsync(request, null);
 
-            // Assert
             Assert.NotNull(response);
             Assert.Equal(2, response.OperationDays.Count);
 

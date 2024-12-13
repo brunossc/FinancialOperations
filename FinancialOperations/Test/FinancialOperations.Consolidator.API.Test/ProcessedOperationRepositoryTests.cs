@@ -6,8 +6,6 @@ using Moq;
 
 namespace FinancialOperations.Consolidator.API.Test
 {
-
-
     public class ProcessedOperationRepositoryTests
     {
         private readonly Mock<IMongoCollection<ProcessedOperation>> _collectionMock;

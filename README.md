@@ -5,7 +5,6 @@ A Aplicação consiste em 2 serviços, é necessário ter o Docker instalado na 
 ![image](https://github.com/user-attachments/assets/2c97c94e-823d-4ae4-af7a-82cc47171fcd)
 
 
-
 Serviços:
 
 - FinancialOperations.API => pode inserir operações de débito e de crédito, com banco de dados MongoDB.

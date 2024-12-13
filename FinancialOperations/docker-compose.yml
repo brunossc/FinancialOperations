@@ -1,0 +1,78 @@
+services:
+
+  financialoperations.api:
+    image: ${DOCKER_REGISTRY-}financialoperationsapi
+    build:
+      context: .
+      dockerfile: FinancialOperations.API/Dockerfile
+    networks:
+      - app-network
+    depends_on:
+      - elasticsearch
+      - rabbitmqInstance
+      - mongodbInstance 
+
+  financialoperations.consolidador.api:
+    image: ${DOCKER_REGISTRY-}financialoperationsconsolidadorapi
+    build:
+      context: .
+      dockerfile: FinancialOperations.Consolidator.API/Dockerfile
+    networks:
+      - app-network
+    depends_on:
+      - elasticsearch
+      - rabbitmqInstance
+      - mongodbInstance 
+
+  mongodbInstance:
+    image: mongo
+    container_name: mongodbInstance
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - app-network
+
+  rabbitmqInstance:
+    image: rabbitmq:3-management
+    container_name: rabbitmqInstance
+    ports:
+    - "5672:5672"
+    - "15672:15672"
+    environment:
+    - RABBITMQ_DEFAULT_USER=guest
+    - RABBITMQ_DEFAULT_PASS=guest
+    networks:
+      - app-network
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.15.3
+    container_name: elasticInstance
+    environment:
+      discovery.type: single-node
+      ES_JAVA_OPTS: -Xms2g -Xmx2g
+      xpack.security.enabled: false
+      xpack.security.enrollment.enabled: false
+    ports:
+      - "9200:9200"
+    networks:
+      - app-network
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.15.3
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+    environment:
+      ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+    networks:
+      - app-network    
+
+volumes:
+  mongo_data:
+  
+networks:
+  app-network:
+    driver: bridge

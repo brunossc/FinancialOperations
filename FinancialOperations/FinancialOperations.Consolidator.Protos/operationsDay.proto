@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+option csharp_namespace = "FinancialOperations.Consolidator.Protos";
+
+package operationsDay;
+
+service OperationServiceProto {
+    rpc CreateOperationAsync (CreateOperationCommand) returns (OperationResponse);
+    rpc GetOperationAsync (GetOperationQuery) returns (OperationResponse);
+}
+
+
+message CreateOperationCommand {
+  string id = 1;
+  string value = 2;
+  string type = 3;
+}
+
+message GetOperationQuery {
+  string year = 1;
+}
+
+message OperationResponse {
+  string id = 1;
+  string value = 2;
+  string day = 3;
+}

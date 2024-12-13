@@ -1,0 +1,11 @@
+C:\Bruno\Projetos\FinancialOperations.MQ.Events\bin\Debug\net8.0\FinancialOperations.MQ.Events.deps.json
+C:\Bruno\Projetos\FinancialOperations.MQ.Events\bin\Debug\net8.0\FinancialOperations.MQ.Events.dll
+C:\Bruno\Projetos\FinancialOperations.MQ.Events\bin\Debug\net8.0\FinancialOperations.MQ.Events.pdb
+C:\Bruno\Projetos\FinancialOperations.MQ.Events\obj\Debug\net8.0\FinancialOperations.MQ.Events.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bruno\Projetos\FinancialOperations.MQ.Events\obj\Debug\net8.0\FinancialOperations.MQ.Events.AssemblyInfoInputs.cache
+C:\Bruno\Projetos\FinancialOperations.MQ.Events\obj\Debug\net8.0\FinancialOperations.MQ.Events.AssemblyInfo.cs
+C:\Bruno\Projetos\FinancialOperations.MQ.Events\obj\Debug\net8.0\FinancialOperations.MQ.Events.csproj.CoreCompileInputs.cache
+C:\Bruno\Projetos\FinancialOperations.MQ.Events\obj\Debug\net8.0\FinancialOperations.MQ.Events.dll
+C:\Bruno\Projetos\FinancialOperations.MQ.Events\obj\Debug\net8.0\refint\FinancialOperations.MQ.Events.dll
+C:\Bruno\Projetos\FinancialOperations.MQ.Events\obj\Debug\net8.0\FinancialOperations.MQ.Events.pdb
+C:\Bruno\Projetos\FinancialOperations.MQ.Events\obj\Debug\net8.0\ref\FinancialOperations.MQ.Events.dll

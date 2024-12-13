@@ -23,4 +23,23 @@ Serviços:
 
   Documento da Arquitetura no modelo C4 (Draw.io), na pasta Documents: OperacoesFinanceiras_Arquitetura.drawio 
 
-Considerando alguns ambientes é melhor executar com o Visual Studio Community 2022 e selecionar o projeto do docker-compose como inicial.
+Melhor executar com o Visual Studio Community 2022 e selecionar o projeto do docker-compose como inicial.
+
+# Considerações
+
+Projetos das Libs:
+
+ - FinancialOperations.SideCar: Desacoplamento da integração com o serviço de monitoramento (ElasticSearch + Kibana)
+ - FinancialOperations.MQ.Events: Masstransit necessita de uma origem única(namespace) de menssagens.
+
+Pontos de observação a serem melhorados:
+
+ - Controle Transacional => https://www.mongodb.com/docs/drivers/csharp/upcoming/fundamentals/transactions/
+ - Mapeamento com Mapster
+ - FluentValidator
+ - Controle de acesso
+ - Serviços de redundancia para falhas (Masstransit já aplica as boas praticas para ACK e NACK como por exemplo: fila de erro)
+ - Notificação de Falhas
+ - Controle de eventos
+ - Versionamento
+ - Criar uma classe base para o repository para remover a definição do database

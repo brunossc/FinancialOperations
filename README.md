@@ -20,6 +20,7 @@ Segue Postman Collection na pasta Documents: Teste.postman_collection.json
 Documento de evicencia do Postman do gRPC(não tem opção para exportar), na pasta Documents: gRPC_Evidence.png
 
 - Arquitetura
-Documento da Arquitetura no modelo C4 (Draw.io), na pasta Documents: OperacoesFinanceiras_Arquitetura.drawio 
+
+  Documento da Arquitetura no modelo C4 (Draw.io), na pasta Documents: OperacoesFinanceiras_Arquitetura.drawio 
 
 Considerando alguns ambientes é melhor executar com o Visual Studio Community 2022 e selecionar o projeto do docker-compose como inicial.

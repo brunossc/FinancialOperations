@@ -24,13 +24,13 @@ namespace FinancialOperations.Consolidator.API.Services
             });
         }
 
-        public override async Task<OperationDaysResponse> GetOperationAsync(GetOperationQuery request, ServerCallContext context)
+        public override async Task<OperationsDayResponse> GetOperationAsync(GetOperationQuery request, ServerCallContext context)
         {
 
             var result = await _repository.GetAsync(x=>x.Total > 0);
-            var operationsDay = new OperationDaysResponse();
+            var operationsDay = new OperationsDayResponse();
             result.ToList().ForEach(o => {
-                operationsDay.OperationDays.Add(
+                operationsDay.OperationsDay.Add(
                     new Protos.OperationDay()
                     {
                         Id = o.Id.ToString(),

@@ -6,7 +6,7 @@ package operationsDay;
 
 service OperationServiceProto {
     rpc CreateOperationAsync (CreateOperationCommand) returns (OperationResponse);
-    rpc GetOperationAsync (GetOperationQuery) returns (OperationDaysResponse);
+    rpc GetOperationAsync (GetOperationQuery) returns (OperationsDayResponse);
 }
 
 
@@ -32,7 +32,7 @@ message OperationDay {
   string day = 3;
 }
 
-message OperationDaysResponse {
+message OperationsDayResponse {
   repeated OperationDay operations_day = 1;
 }
 

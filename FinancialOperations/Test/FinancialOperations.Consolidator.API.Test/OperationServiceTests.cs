@@ -65,10 +65,10 @@ namespace FinancialOperations.Consolidator.API.Test
             var response = await _service.GetOperationAsync(request, null);
 
             Assert.NotNull(response);
-            Assert.Equal(2, response.OperationDays.Count);
+            Assert.Equal(2, response.OperationsDay.Count);
 
-            Assert.Contains(response.OperationDays, o => o.Id == operations[0].Id.ToString() && o.Value == "1000" && o.Day == operations[0].Day.ToString());
-            Assert.Contains(response.OperationDays, o => o.Id == operations[1].Id.ToString() && o.Value == "2000" && o.Day == operations[1].Day.ToString());
+            Assert.Contains(response.OperationsDay, o => o.Id == operations[0].Id.ToString() && o.Value == "1000" && o.Day == operations[0].Day.ToString());
+            Assert.Contains(response.OperationsDay, o => o.Id == operations[1].Id.ToString() && o.Value == "2000" && o.Day == operations[1].Day.ToString());
         }
     }
 

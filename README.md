@@ -1,5 +1,9 @@
 # Operações Financeiras:
-A Aplicação consiste em 2 serviços, é necessário ter o Docker instalado na máquina:
+A aplicação consiste em 2 serviços, é necessário ter o Docker instalado na máquina:
+
+
+![image](https://github.com/user-attachments/assets/2c97c94e-823d-4ae4-af7a-82cc47171fcd)
+
 
 Serviços:
 

@@ -33,6 +33,6 @@ message OperationDay {
 }
 
 message OperationDaysResponse {
-  repeated OperationDay operation_days = 1;
+  repeated OperationDay operations_day = 1;
 }
 

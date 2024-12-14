@@ -21,7 +21,7 @@ Serviços:
 
 - FinancialOperations.Consolidator.API(gRPC) => Disponibiliza o consolidado do dia das operações de crédito e débito efetuadas pelo serviço FinancialOperations.API, com banco de dados MongoDB.
 
-  Documento de evicencia do Postman do gRPC(não tem opção para exportar), na pasta Documents: gRPC_Evidence.png
+  Documento de evidência do Postman do gRPC(não tem opção para exportar), na pasta Documents: gRPC_Evidence.png
 
 - Arquitetura
 

@@ -47,3 +47,4 @@ Pontos de observação a serem melhorados:
  - Controle de eventos
  - Versionamento
  - Criar uma classe base para o repository para remover a definição do database
+ - Filtros

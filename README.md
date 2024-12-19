@@ -48,3 +48,25 @@ Pontos de observação a serem melhorados:
  - Versionamento
  - Criar uma classe base para o repository para remover a definição do database
  - Filtros
+
+#Observações solicitadas:
+
+1 - Pontos de melhoria:
+
+- Documentação do modelo de arquitetura em C4.
+  
+- Uso de tecnologias mais performáticas (gRPC).
+  
+- Utilização do Masstransit para gestão das filas (dead-letter)
+  
+- Removido excesso de try-cacth
+  
+- Inclusão do monitoramento - com ElasticSearch e Kibaba
+  
+- Uso de bancos de dados físico
+
+2 - Motivações: 
+
+- Oportunidade
+  
+- Perfil solicitado e validação foram desafiadores(vi que é uma oportunidade de evoluir profissionalmente).

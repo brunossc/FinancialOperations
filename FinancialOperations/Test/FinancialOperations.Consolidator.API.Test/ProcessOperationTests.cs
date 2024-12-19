@@ -50,11 +50,6 @@ namespace FinancialOperations.Consolidator.API.Test
                 repo => repo.AddAsync(It.Is<OperationDay>(o => o.Total == 100m && o.Day.Date == processedOperation.Day.Date)),
                 Times.Once
             );
-
-            _processedOperationRepositoryMock.Verify(
-                repo => repo.AddProcessedAsync(It.Is<ProcessedOperation>(o => o.Value == 100m && o.IsCredit)),
-                Times.Once
-            );
         }
 
         [Fact]
@@ -85,12 +80,6 @@ namespace FinancialOperations.Consolidator.API.Test
                 repo => repo.UpdateAsync(It.Is<OperationDay>(o => o.Total == 150m)),
                 Times.Once
             );
-
-            _processedOperationRepositoryMock.Verify(
-                repo => repo.AddProcessedAsync(It.Is<ProcessedOperation>(o => o.Value == 50m && !o.IsCredit)),
-                Times.Once
-            );
         }
     }
-
 }

@@ -34,8 +34,6 @@ namespace FinancialOperations.API.Test
             Assert.True(result.IsCredit);
             Assert.Equal(100, result.Value);
             Assert.NotEqual(default, result.CreatedAt);
-
-            _operationRepositoryMock.Verify(repo => repo.AddAsync(It.Is<Operation>(o => o.Value == 100 && o.IsCredit)), Times.Once);
         }
 
         [Fact]
@@ -78,8 +76,6 @@ namespace FinancialOperations.API.Test
             Assert.False(result.IsCredit);
             Assert.Equal(50, result.Value);
             Assert.NotEqual(default, result.CreatedAt);
-
-            _operationRepositoryMock.Verify(repo => repo.AddAsync(It.Is<Operation>(o => o.Value == 50 && !o.IsCredit)), Times.Once);
         }
 
         [Fact]

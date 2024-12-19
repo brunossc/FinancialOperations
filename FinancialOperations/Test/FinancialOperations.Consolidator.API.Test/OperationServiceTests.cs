@@ -71,6 +71,4 @@ namespace FinancialOperations.Consolidator.API.Test
             Assert.Contains(response.OperationsDay, o => o.Id == operations[1].Id.ToString() && o.Value == "2000" && o.Day == operations[1].Day.ToString());
         }
     }
-
-
 }

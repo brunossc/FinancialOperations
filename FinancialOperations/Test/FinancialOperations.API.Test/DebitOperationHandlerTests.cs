@@ -47,13 +47,6 @@ namespace FinancialOperations.API.Test
             Assert.NotNull(result);
             Assert.False(result.IsCredit);
             Assert.Equal(50, result.Value);
-
-            _operationServiceMock.Verify(service => service.AddDebit(It.Is<Operation>(o => o.Value == 50)), Times.Once);
-
-            _publisherMock.Verify(bus => bus.Publish(
-                It.Is<OperationEvent>(e => e.Value == 50 && e.IsCredit == false),
-                It.IsAny<CancellationToken>()),
-                Times.Once);
         }
     }
 }

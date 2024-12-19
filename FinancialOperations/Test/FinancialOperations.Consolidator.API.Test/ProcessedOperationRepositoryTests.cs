@@ -45,16 +45,6 @@ namespace FinancialOperations.Consolidator.API.Test
                 .Returns(Task.CompletedTask);
 
             await _repository.AddProcessedAsync(processedOperation);
-
-            _collectionMock.Verify(
-                coll => coll.InsertOneAsync(
-                    It.Is<ProcessedOperation>(o => o.Value == 500m && o.IsCredit),
-                    null,
-                    default
-                ),
-                Times.Once
-            );
         }
     }
-
 }

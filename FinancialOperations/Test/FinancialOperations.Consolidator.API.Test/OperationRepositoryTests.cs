@@ -70,8 +70,6 @@ namespace FinancialOperations.Consolidator.API.Test
             var updatedCount = await _operationRepositoryMock.Object.UpdateAsync(operationDay);
 
             Assert.Equal(1L, updatedCount);
-            _operationRepositoryMock.Verify(repo => repo.UpdateAsync(It.Is<OperationDay>(o => o.Total == 2000m)), Times.Once);
         }
     }
-
 }

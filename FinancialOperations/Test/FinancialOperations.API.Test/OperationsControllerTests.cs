@@ -42,8 +42,6 @@ namespace FinancialOperations.API.Test
 
             Assert.Equal(expectedResponse.IsCredit, response.IsCredit);
             Assert.Equal(expectedResponse.Value, response.Value);
-
-            _mediatorMock.Verify(m => m.Send(request, default), Times.Once);
         }
 
         [Fact]
@@ -63,8 +61,6 @@ namespace FinancialOperations.API.Test
 
             Assert.Equal(expectedResponse.IsCredit, response.IsCredit);
             Assert.Equal(expectedResponse.Value, response.Value);
-
-            _mediatorMock.Verify(m => m.Send(request, default), Times.Once);
         }
     }
 

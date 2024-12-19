@@ -21,7 +21,7 @@ Serviços:
 
 - FinancialOperations.Consolidator.API(gRPC) => Disponibiliza o consolidado do dia das operações de crédito e débito efetuadas pelo serviço FinancialOperations.API, com banco de dados MongoDB.
 
-  Documento de evicencia do Postman do gRPC(não tem opção para exportar), na pasta Documents: gRPC_Evidence.png
+  Documento de evidência do Postman do gRPC(não tem opção para exportar), na pasta Documents: gRPC_Evidence.png
 
 - Arquitetura
 
@@ -47,3 +47,26 @@ Pontos de observação a serem melhorados:
  - Controle de eventos
  - Versionamento
  - Criar uma classe base para o repository para remover a definição do database
+ - Filtros
+
+# Observações solicitadas:
+
+1 - Pontos de melhoria:
+
+- Documentação do modelo de arquitetura em C4.
+  
+- Uso de tecnologias mais performáticas (gRPC).
+  
+- Utilização do Masstransit para gestão das filas (dead-letter)
+  
+- Removido excesso de try-cacth
+  
+- Inclusão do monitoramento - com ElasticSearch e Kibaba
+  
+- Uso de bancos de dados físico
+
+2 - Motivações: 
+
+- Oportunidade
+  
+- Perfil solicitado e validação foram desafiadores(vi que é uma oportunidade de evoluir profissionalmente).

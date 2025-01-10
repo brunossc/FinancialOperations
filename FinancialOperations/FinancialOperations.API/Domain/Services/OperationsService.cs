@@ -26,7 +26,7 @@ namespace FinancialOperations.API.Domain.Services
             {
                 var param = new object[] { operation };
                 _logger.LogError(ex, "Erro adicionando uma operação de crédito", param);
-                return new Operation();
+                throw;
             }
         }
 
@@ -40,7 +40,7 @@ namespace FinancialOperations.API.Domain.Services
             {
                 var param = new object[] { operation };
                 _logger.LogError(ex, "Erro adicionando uma operação de débito", param);
-                return new Operation();
+                throw;
             }
         }
 
